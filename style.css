@@ -1,0 +1,472 @@
+body {
+  background-color: #101010;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+p {
+  margin: 0 0 30px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+a {
+  padding: 15px 30px;
+  background-color: #fb7f2f;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: solid 1px #fb7f2f;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #fff;
+  transition: all ease-in-out 0.2s;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: transparent;
+  color: #fb7f2f;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0 0 50px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+h4 {
+  margin: 0 0 5px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/******************************************************** Header **********************************************/
+header {
+  width: fit-content;
+  position: fixed;
+  top: 34%;
+  z-index: 9999;
+}
+
+header ul {
+  margin: 0 0 0 20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 20px;
+}
+
+header ul li a {
+  padding: 11px 13px;
+  border-radius: 50%;
+  border: unset;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header ul li a:hover {
+  background-color: #fff;
+}
+
+/******************************************************** Banner **********************************************/
+.banner {
+  max-width: 1300px;
+  margin: auto;
+  padding: 75px 20px 0;
+}
+
+.banner .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 100px;
+}
+
+.banner h1 {
+  margin: 0 0 25px;
+  font-size: 70px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+  border-left: solid 4px #fb7f2f;
+  padding-left: 30px;
+}
+
+span.orange {
+  color: #fb7f2f;
+}
+
+.banner-col2 img {
+  width: 100%;
+  margin-bottom: -7px;
+}
+
+.btn {
+  display: flex;
+  gap: 30px;
+}
+
+/******************************************************** About **********************************************/
+.about {
+  padding: 150px 20px;
+  background-image: linear-gradient(to right, transparent 50%, #181818 50%);
+}
+
+.about .inner-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+}
+
+.about .row {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.about ul {
+  padding: 0;
+  list-style: none;
+  margin: 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 25px;
+}
+
+.about ul li {
+  display: flex;
+  align-items: center;
+}
+
+.about ul li svg {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.about ul li a {
+  padding: 0;
+  border: unset;
+  background-color: unset;
+  text-transform: unset;
+}
+
+.about ul li .orange {
+  margin-right: 20px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-left: -7px;
+}
+
+.social-icons svg {
+  height: 30px;
+}
+
+.social-icons a {
+  padding: unset;
+  border: unset;
+  background-color: unset;
+}
+
+.social-icons a:hover svg path {
+  fill: #fb7f2f;
+  transition: all ease-in-out 0.2s;
+}
+
+.social-icons a:hover svg rect {
+  fill: #fb7f2f;
+  transition: all ease-in-out 0.2s;
+}
+
+/******************************************************** Skills **********************************************/
+
+.skills {
+  padding: 100px 20px;
+}
+
+.skills .row {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.skills .inner-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+ul.progress {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.progress-line {
+  width: 100%;
+  display: block;
+  height: 10px;
+  background-color: #343434;
+}
+
+.progresshtml {
+  width: 95%;
+  height: 10px;
+  display: block;
+  background-color: #fb7f2f;
+  animation-name: progressHtml;
+  animation-duration: 4s;
+}
+
+@keyframes progressHtml {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+.progresscss {
+  width: 95%;
+  height: 10px;
+  display: block;
+  background-color: #fb7f2f;
+  animation-name: progressCss;
+  animation-duration: 4s;
+}
+
+@keyframes progressCss {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+.progressjs {
+  width: 60%;
+  height: 10px;
+  display: block;
+  background-color: #fb7f2f;
+  animation-name: progressJs;
+  animation-duration: 4s;
+}
+
+@keyframes progressJs {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+.progressphp {
+  width: 50%;
+  height: 10px;
+  display: block;
+  background-color: #fb7f2f;
+  animation-name: progressPhp;
+  animation-duration: 4s;
+}
+
+@keyframes progressPhp {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+.progressliquid {
+  width: 60%;
+  height: 10px;
+  display: block;
+  background-color: #fb7f2f;
+  animation-name: progressLiquid;
+  animation-duration: 4s;
+}
+
+@keyframes progressLiquid {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+.progresswordpress {
+  width: 90%;
+  height: 10px;
+  display: block;
+  background-color: #fb7f2f;
+  animation-name: progressWordpress;
+  animation-duration: 4s;
+}
+
+@keyframes progressWordpress {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+.progressshopify {
+  width: 60%;
+  height: 10px;
+  display: block;
+  background-color: #fb7f2f;
+  animation-name: progressShopify;
+  animation-duration: 4s;
+}
+
+@keyframes progressShopify {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+.progressreact {
+  width: 20%;
+  height: 10px;
+  display: block;
+  background-color: #fb7f2f;
+  animation-name: progressReact;
+  animation-duration: 4s;
+}
+
+@keyframes progressReact {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 20%;
+  }
+}
+
+.progressxd {
+  width: 90%;
+  height: 10px;
+  display: block;
+  background-color: #fb7f2f;
+  animation-name: progressXd;
+  animation-duration: 4s;
+}
+
+@keyframes progressXd {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+.progressfigma {
+  width: 50%;
+  height: 10px;
+  display: block;
+  background-color: #fb7f2f;
+  animation-name: progressFigma;
+  animation-duration: 4s;
+}
+
+@keyframes progressFigma {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 50%;
+  }
+}
+
+/******************************************************** Projects **********************************************/
+
+.projects {
+  padding: 100px 20px;
+}
+
+.projects .row {
+  max-width: 1300px;
+  margin: auto;
+}
+
+ul.myproject {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.myproject li {
+  height: 100%;
+  display: block;
+  margin-bottom: -7px;
+}
+
+.myproject li a {
+  padding: unset;
+  border: unset;
+  border-radius: unset;
+  background-color: unset;
+  line-height: 1;
+}
+
+/******************************************************** Footer **********************************************/
+
+footer p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #bababa;
+}
+
+footer .row {
+  max-width: 1300px;
+  margin: auto;
+}
+
+footer {
+  padding: 35px 20px;
+  background-color: #000;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+}
+
+footer .social-icons svg {
+  height: 20px;
+}
+
+footer .social-icons a {
+  line-height: 1;
+}
