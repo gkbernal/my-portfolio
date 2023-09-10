@@ -752,6 +752,7 @@ footer .social-icons a {
   /******************************************************** About **********************************************/
   .about {
     padding: 50px 20px;
+    scroll-margin-top: 50px;
   }
 
   .about .inner-row {
@@ -794,6 +795,7 @@ footer .social-icons a {
   /******************************************************** Skills **********************************************/
   .skills {
     padding: 50px 20px;
+    scroll-margin-top: 50px;
   }
 
   .skills .inner-row {
@@ -806,6 +808,7 @@ footer .social-icons a {
   /******************************************************** Projects **********************************************/
   .projects {
     padding: 50px 20px;
+    scroll-margin-top: 50px;
   }
 
   ul.myproject {
