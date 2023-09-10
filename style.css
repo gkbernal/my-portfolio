@@ -750,9 +750,12 @@ footer .social-icons a {
   }
 
   /******************************************************** About **********************************************/
+  #about {
+    scroll-margin-top: 80px;
+  }
+
   .about {
     padding: 50px 20px;
-    scroll-margin-top: 50px;
   }
 
   .about .inner-row {
@@ -793,9 +796,11 @@ footer .social-icons a {
   }
 
   /******************************************************** Skills **********************************************/
+  #skills {
+    scroll-margin-top: 80px;
+  }
   .skills {
     padding: 50px 20px;
-    scroll-margin-top: 50px;
   }
 
   .skills .inner-row {
@@ -806,9 +811,12 @@ footer .social-icons a {
   }
 
   /******************************************************** Projects **********************************************/
+  #projects {
+    scroll-margin-top: 80px;
+  }
+
   .projects {
     padding: 50px 20px;
-    scroll-margin-top: 50px;
   }
 
   ul.myproject {
