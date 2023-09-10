@@ -33,6 +33,7 @@ a {
   color: #fff;
   transition: all ease-in-out 0.2s;
   display: inline-block;
+  position: relative;
 }
 
 a:hover {
@@ -204,7 +205,7 @@ span.orange {
   transition: all ease-in-out 0.2s;
 }
 
-.about .col1 a {
+.about .col1 a.show-mobile {
   display: none;
 }
 
@@ -442,12 +443,19 @@ ul.myproject {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .myproject li {
   height: 100%;
   display: block;
   margin-bottom: -7px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .myproject li a {
@@ -456,11 +464,37 @@ ul.myproject {
   border-radius: unset;
   background-color: unset;
   line-height: 1;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: all ease-in-out 0.2s;
+}
+
+.myproject li a:hover:before {
+  content: "View More";
+  background-color: #000000a6;
+  position: absolute;
+  transition: all ease-in-out 0.2s;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
 }
 
 .myproject img {
   width: 100%;
   height: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /******************************************************** Footer **********************************************/
@@ -640,10 +674,11 @@ footer .social-icons a {
   }
 
   header {
-    position: relative;
+    position: sticky;
     width: 100%;
     padding: 10px 20px;
     background-color: #000;
+    top: 0;
   }
 
   .mobile svg {
@@ -664,6 +699,34 @@ footer .social-icons a {
     text-align: end;
   }
 
+  ul.sub-head {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #000;
+  }
+
+  ul.sub-head li {
+    width: 100%;
+    text-align: start;
+  }
+
+  .mobile ul.sub-head li a {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 10px;
+  }
+
+  .mobile ul.sub-head li a:hover {
+    border-radius: unset;
+  }
+
   /******************************************************** Banner **********************************************/
   .banner {
     padding: 50px 20px;
@@ -671,6 +734,8 @@ footer .social-icons a {
 
   .banner .row {
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .banner .banner-col2 {
@@ -699,12 +764,12 @@ footer .social-icons a {
     text-align: center;
   }
 
-  .about .col1 a {
+  .about .col1 a.show-mobile {
     display: block;
     margin-top: 20px;
   }
 
-  .about .col2 a {
+  .about .col2 a.show-desktop {
     display: none;
   }
 
