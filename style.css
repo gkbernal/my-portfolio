@@ -1,5 +1,8 @@
 html {
   scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -7,6 +10,9 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
   color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 p {
@@ -65,6 +71,7 @@ header {
   position: fixed;
   top: 34%;
   z-index: 9999;
+  box-sizing: border-box;
 }
 
 header ul {
@@ -75,6 +82,10 @@ header ul {
   flex-direction: column;
   width: fit-content;
   gap: 20px;
+}
+
+.col.mobile {
+  display: none;
 }
 
 header ul li a {
@@ -191,6 +202,10 @@ span.orange {
 .social-icons a:hover svg rect {
   fill: #fb7f2f;
   transition: all ease-in-out 0.2s;
+}
+
+.about .col1 a {
+  display: none;
 }
 
 /******************************************************** Skills **********************************************/
@@ -412,6 +427,7 @@ ul.progress {
 
 .projects {
   padding: 100px 20px;
+  background-image: linear-gradient(to right, #181818 50%, transparent 50%);
 }
 
 .projects .row {
@@ -581,5 +597,155 @@ footer .social-icons a {
   /******************************************************** Skills **********************************************/
   ul.myproject {
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+/******************************************************** 767 **********************************************/
+@media (max-width: 767px) {
+  .banner .row,
+  .about .row,
+  .skills .row,
+  .projects .row {
+    padding-left: 0px;
+  }
+
+  a {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+    margin: 0 0 30px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  /******************************************************** Header **********************************************/
+  .col.desktop {
+    display: none;
+  }
+
+  .col.mobile {
+    display: block;
+  }
+
+  header {
+    position: relative;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #000;
+  }
+
+  .mobile svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mobile a {
+    background-color: unset;
+    border: unset;
+    padding: unset;
+    line-height: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .col.mobile {
+    text-align: end;
+  }
+
+  /******************************************************** Banner **********************************************/
+  .banner {
+    padding: 50px 20px;
+  }
+
+  .banner .row {
+    display: flex;
+  }
+
+  .banner .banner-col2 {
+    display: none;
+  }
+
+  .btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: stretch;
+  }
+
+  /******************************************************** About **********************************************/
+  .about {
+    padding: 50px 20px;
+  }
+
+  .about .inner-row {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+
+  .about p {
+    text-align: center;
+  }
+
+  .about .col1 a {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .about .col2 a {
+    display: none;
+  }
+
+  .about .col1 ul li a {
+    margin: 0;
+  }
+
+  .about ul li {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about .social-icons a {
+    margin: 0;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  /******************************************************** Skills **********************************************/
+  .skills {
+    padding: 50px 20px;
+  }
+
+  .skills .inner-row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  /******************************************************** Projects **********************************************/
+  .projects {
+    padding: 50px 20px;
+  }
+
+  ul.myproject {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
   }
 }
